@@ -7,5 +7,9 @@ class Coffe : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coffe)
+
+        if(supportActionBar != null) {
+            supportActionBar!!.hide()
+        }
     }
 }
