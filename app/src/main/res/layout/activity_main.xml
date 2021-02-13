@@ -4,15 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
+    android:paddingHorizontal="16dp"
+    android:background="#08AD7F"
     tools:context=".MainActivity">
+
+<EditText
+    android:id="@+id/cx1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_marginTop="150dp"
+    android:background="#fff"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="5dp"
+    android:hint="Email"
+    android:inputType="textAutoComplete"
+    android:layout_marginBottom="10dp"
+    />
+    <EditText
+        android:id="@+id/cx2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cx1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#fff"
+        android:layout_marginTop="45dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cx2"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:backgroundTint="#677161"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/btn"
+        android:text="Ainda não é cadastrado ? Clique aqui"
+        android:textColor="#fff"
+        android:layout_marginTop="80dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
